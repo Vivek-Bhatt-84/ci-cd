@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.json({ message: 'Server running retrying again' });
 });
 app.get('/users', (req, res) => {
-    res.send({ users: "one" });
+    res.send({ users: ["one","two"] });
 })
 
 app.listen(port, () => {
