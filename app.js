@@ -8,7 +8,7 @@ const app = express();
 const port = "7000";
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Server running' });
+    res.json({ message: 'Server running retrying again' });
 });
 
 app.listen(port, () => {
