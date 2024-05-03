@@ -10,6 +10,9 @@ const port = "7000";
 app.get('/', (req, res) => {
     res.json({ message: 'Server running retrying again' });
 });
+app.get('/users', (req, res) => {
+    res.send({ users: "one" });
+})
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
